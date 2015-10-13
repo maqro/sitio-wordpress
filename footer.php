@@ -36,8 +36,7 @@
 									</div>
 									<div class="col-md-6">
 											<div>
-													<form class="form-horizontal" action="mail.php" method="POST">
-															<div class="form-group">
+															<div class="form-group row">
 																	<h2 id="contacto">Contacto</h2>
 																	<?php echo do_shortcode( '[contact-form-7 id="26" title="Contact form 1"]' ); ?>
 																	<!-- <table style="color:white">
@@ -104,12 +103,7 @@
 																			</tr>
 																	</table> -->
 															</div>
-													</form>
-													<br>
-													<font color="white">
-															Al enviar este formulario aceptas la políticas de reservacion y las políticas de privacidad.
-															<a href="AvisoPrivacidad_MaQro.pdf">Ver políticas.</a>
-													</font>
+
 											</div>
 											<div>
 													<font color="white" size=2.5>
