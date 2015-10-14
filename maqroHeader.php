@@ -37,30 +37,30 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a id="start" href="index.php"><i class="fa fa-home"></i> INICIO</a>
+                        <a id="start" href="<?php echo get_site_url(); ?>"><i class="fa fa-home"></i> INICIO</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">EL MUSEO <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#historia.php">HISTORIA</a></li>
-                            <li><a href="#claustro.php">EL CLAUSTRO</a></li>
+                            <li><a href="<?php echo get_site_url(); ?>/historia.php">HISTORIA</a></li>
+                            <li><a href="<?php echo get_site_url(); ?>/claustro">EL CLAUSTRO</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#eventos.php">EVENTOS</a>
+                        <a href="<?php echo get_site_url(); ?>/eventos">EVENTOS</a>
                     </li>
                     <li>
-                        <a href="#educacion.php">EDUCACION</a>
+                        <a href="<?php echo get_site_url(); ?>/educacion">EDUCACION</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ASOCIACIONES <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#amigos.php">AMIGOS</a></li>
-                            <li><a href="#voluntariado.php">VOLUNTARIADO</a></li>
+                            <li><a href="<?php echo get_site_url(); ?>/amigos">AMIGOS</a></li>
+                            <li><a href="<?php echo get_site_url(); ?>/voluntariado">VOLUNTARIADO</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="./juegos/memorama/BuildMemorama.html"> AMIGUITOS</a>
+                        <a href="<?php echo get_template_directory_uri(); ?>/juegos/memorama/BuildMemorama.html"> AMIGUITOS</a>
                     </li>
                     <li>
                         <a href="#contacto"> CONTACTO <i class="fa fa-envelope"></i></a>

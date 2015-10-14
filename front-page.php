@@ -145,7 +145,7 @@ get_header(); ?>
                               <h2>Visitas guiadas:</h2>
                               Recorridos por el MAQRO con la guía de un mediador. <br><br>
                               Martes a viernes. Turno Matutino. Previa cita para reservación de grupos en el Departamento de Servicios Educativos (442) 212 23 57 y 212 35 23 (extensión 3) o al correo: maqeducativos@gmail.com<br>
-                              <a href="#educacion.php">Mas Informaci&oacute;n</a>
+                              <a href="<?php echo get_site_url(); ?>/educacion">Mas Informaci&oacute;n</a>
                           </div>
                           <div>
                               <h2>Servicios y Accesibilidad:</h2>
