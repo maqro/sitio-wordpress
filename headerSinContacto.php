@@ -13,9 +13,9 @@
                 <a target="_blank" href="https://www.facebook.com/museodeartedequeretaro">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/src/media/LogoFacebook.png" />
                 </a>
-                <a target="_blank" href="">
+                <!-- <a target="_blank" href="">
                     <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/src/media/LogoPinterest.png" />
-                </a>
+                </a> -->
                 <div id="TA_socialButtonReviews782" class="TA_socialButtonReviews pull-right">
                     <a target="_blank" href="http://www.tripadvisor.es/Attraction_Review-g479232-d2315125-Reviews-Museum_of_Arts_of_Queretaro-Queretaro_Central_Mexico_and_Gulf_Coast.html"><img src="<?php echo get_template_directory_uri(); ?>/images/src/media/LogoTripAdvisor.png"/></a>
                 </div>

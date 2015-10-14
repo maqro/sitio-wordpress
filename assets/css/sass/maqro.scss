@@ -5,15 +5,11 @@
  * Copyright (c) 2015 Dominik García
  * Licensed under the GPLv2+ license.
  */
+
+$main-color: #B71965;
+
  body {
-   background: #e5bbac;
-   background: -moz-linear-gradient(top, #ebd3c7 0%, #ebd3c7 15%, #f5e8e2 16%, #f5e8e2 100%);
-   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebd3c7), color-stop(15%, #ebd3c7), color-stop(16%, #f5e8e2), color-stop(100%, #f5e8e2));
-   background: -webkit-linear-gradient(top, #ebd3c7 0%, #ebd3c7 15%, #f5e8e2 16%, #f5e8e2 100%);
-   background: -o-linear-gradient(top, #ebd3c7 0%, #ebd3c7 15%, #f5e8e2 16%, #f5e8e2 100%);
-   background: -ms-linear-gradient(top, #ebd3c7 0%, #ebd3c7 15%, #f5e8e2 16%, #f5e8e2 100%);
-   background: linear-gradient(to bottom, #ebd3c7 0%, #ebd3c7 15%, #f5e8e2 16%, #f5e8e2 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd3c7', endColorstr='#f5e8e2',GradientType=0 );
+   background: #fff;
    color: #66241F;
    font-family: 'Open Sans Condensed', sans-serif;
    font-weight: 700;
@@ -40,13 +36,13 @@
  }
 
  .fa {
-   color: #E5C5B7;
+   color: #fff;
  }
 
  /* Estilos maqro */
 
  .maqro-header {
-   background: #9B2D36;
+   background: $main-color;
    height: 112px;
    overflow: visible;
  }
@@ -72,14 +68,14 @@
 
  .maqro-navbar {
    float: right;
-   background: #66241F;
+   background: darken($main-color, 20%);
    color: white;
    border-width: 0px;
    margin-top: 7px;
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
    a {
-     color: #E5C5B7;
+     color: #fff;
      font-weight: bold;
      padding-top: -16px;
    }
@@ -102,7 +98,7 @@
 
  .nav > li > a {
    &:hover {
-     background-color: #9B2D36;
+     background-color: darken($main-color, 15%);
    }
    padding-right: 23.5px;
    padding-left: 23.5px;
@@ -113,12 +109,12 @@
 
  div {
    .maqro-top-body {
-     background-color: #FFFFFF;
+     background-color: darken($main-color, 20%);
      padding: 0px 48px 16px 16px;
      border-radius: 15px 15px 0px 0px;
      margin-top: 16px;
      margin-right: -16px;
-     color: #66241F;
+     color: #fff;
      font-family: 'Open Sans Condensed', sans-serif;
      font-weight: 700;
      font-size: 1.2em;
@@ -129,18 +125,18 @@
  }
 
  h1 {
-   color: #9B2D36;
+   color: lighten($main-color, 10%);
    font-size: 3em;
    font-weight: bold;
  }
 
  div.maqro-top-body h2 {
-   color: #66241F;
+   color: #fff;
    font-weight: bold;
  }
 
  footer {
-   background-color: #7B2716;
+   background-color: darken($main-color, 20%);
    ul {
      padding-left: 10px;
    }
@@ -245,7 +241,7 @@
  }
 
  hr {
-   border-top: 4px solid #9B2D36;
+   border-top: 4px solid #fff;
  }
 
  #plugins-sociales * {
@@ -262,8 +258,8 @@
    overflow: hidden;
    text-align: center;
    z-index: 99999999;
-   background-color: #9B2D36;
-   color: #eeeeee;
+   background-color: darken($main-color, 20%);
+   color: #fff;
    width: 90px;
    height: 90px;
    right: 0px;
@@ -275,7 +271,7 @@
    -o-transition: all 0.5s ease-in-out;
    transition: all 0.5s ease-in-out;
    &:hover {
-     background-color: #888888;
+     background-color: $main-color;
    }
    &.show {
      visibility: visible;

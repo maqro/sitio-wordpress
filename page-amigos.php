@@ -14,7 +14,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-md-4" style="padding:70px 0;">
                     <div class="logo">
-                        <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/src/media/LogoMAQRO2.png" />
+                        <?php include("logo.php") ?>
                     </div>
                     <div>
                         <div class="flexible-container">
