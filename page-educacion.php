@@ -29,33 +29,57 @@ get_header(); ?>
                 <div class="col-md-12 inclusive-background">
                     <div id="carousel-main" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-main" data-slide-to="1" ></li>
-                            <li data-target="#carousel-main" data-slide-to="2" ></li>
-                            <li data-target="#carousel-main" data-slide-to="3" ></li>
-                            <li data-target="#carousel-main" data-slide-to="4" ></li>
-                            <li data-target="#carousel-main" data-slide-to="5" ></li>
-                            <li data-target="#carousel-main" data-slide-to="6" ></li>
+                          <?php
+                            $type = 'taller';
+                            $args=array(
+                              'post_type' => $type,
+                              'post_status' => 'publish');
+
+                            $my_query = null;
+                            $my_query = new WP_Query($args);
+                            if( $my_query->have_posts() ) {
+                              $i = -1;
+                              while ($my_query->have_posts()) : $my_query->the_post(); $i++;?>
+
+                              <?php if ($i == 0) {
+                                echo '<li data-target="#carousel-main" data-slide-to="0" class="active"></li>';
+                              } else {
+                                echo '<li data-target="#carousel-main" data-slide-to="'.$i.'" ></li>';
+                              }?>
+
+                                  <?php
+                              endwhile;
+                            }
+                            wp_reset_query();  // Restore global post data stomped by the_post().
+                           ?>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/talleres/pinturatexturas.jpg"></img>
-                            </div>
-                            <div class="item active">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/talleres/cursoLoteria.jpg"></img>
-                            </div>
-                            <div class="item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/talleres/GrandesPintores.jpg"></img>
-                            </div>
-                            <div class="item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/talleres/pinturaespontanea.jpg"></img>
-                            </div>
-                            <div class="item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/talleres/1.JPG"></img>
-                            </div>
-                            <div class="item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/talleres/DSC0269.JPG"></img>
-                            </div>
+                          <div class="carousel-inner">
+                            <?php
+                              $type = 'taller';
+                              $args=array(
+                                'post_type' => $type,
+                                'post_status' => 'publish');
+
+                              $my_query = null;
+                              $my_query = new WP_Query($args);
+                              if( $my_query->have_posts() ) {
+                                $i = 0;
+                                while ($my_query->have_posts()) : $my_query->the_post(); $i++;?>
+
+                                <?php if ($i == 1) {
+                                  echo '<div class="item active">';
+                                } else {
+                                  echo '<div class="item">';
+                                }?>
+                                      <?php the_post_thumbnail(); ?>
+                                    </div>
+                                    <?php
+                                endwhile;
+                              }
+                              wp_reset_query();  // Restore global post data stomped by the_post().
+                             ?>
+                          </div>
                         </div>
                         <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/left.png"></img>
