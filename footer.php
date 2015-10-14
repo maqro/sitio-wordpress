@@ -6,6 +6,67 @@
  * @since 0.1.0
  */
 ?>
+<?php $pagename = get_query_var('pagename');
+if ( !$pagename && $id > 0 ) {
+	// If a static page is set as the front page, $pagename will not be set. Retrieve it from the queried object
+	$post = $wp_query->get_queried_object();
+	$pagename = $post->post_name;
+} ?>
+<?php if($pagename == "educacion") { ?>
+	<footer>
+	        <div class="container">
+	            <div class="row" style="background-color:#9A9493;padding:70px;">
+	                <div class="col-md-2">
+	                </div>
+	                <div class="col-md-8">
+	                    <?php echo do_shortcode( '[contact-form-7 id="45" title="Contact Educacion"]' ); ?>
+	                </div>
+	                <div class="col-md-2">
+	                </div>
+	            </div>
+	            <div class="logoGob" align="center">
+	                <!-- <img src="media/logosGobierno2.png" /> -->
+	            </div>
+	        </div>
+	        <!-- Latest compiled and minified JavaScript -->
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	        <script src="http://www.jscache.com/wejs?wtype=socialButtonRate&amp;uniq=998&amp;locationId=2315125&amp;color=white&amp;reviewCountRequested=true&amp;lang=es&amp;display_version=2"></script>
+	        <script>
+	            $(function(){
+
+	                $(document).on( 'scroll', function(){
+
+	                    if ($(window).scrollTop() > 1500) {
+	                        $('.scroll-top-wrapper').addClass('show');
+	                    } else {
+	                        $('.scroll-top-wrapper').removeClass('show');
+	                    }
+	                });
+
+	                $('.scroll-top-wrapper').on('click', scrollToTop);
+	            });
+
+	            function scrollToTop() {
+	                verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+	                element = $('body');
+	                offset = element.offset();
+	                offsetTop = offset.top;
+	                $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+	            }
+	        </script>
+	    </footer>
+	    <div class="container">
+	        <div class="registro">
+	            <font color="#2F2523">Museo de Arte de Queretaro. ® 2015.</font>
+	        </div>
+	    </div>
+	    <div class="scroll-top-wrapper ">
+	        <span class="scroll-top-inner">
+	            <i class="fa fa-3x fa fa-chevron-up"></i>
+	        </span>
+	    </div>
+<?php  } else { ?>
 <footer>
 	<div class="container">
 			<div class="row" style="background-color:#9A9493;padding:70px;">
@@ -38,7 +99,11 @@
 											<div>
 															<div class="form-group row">
 																	<h2 id="contacto">Contacto</h2>
-																	<?php echo do_shortcode( '[contact-form-7 id="26" title="Contact form 1"]' ); ?>
+																	<?php if ($pagename == "educacion") {
+																		echo do_shortcode( '[contact-form-7 id="45" title="Contact Educacion"]' );
+																	} else {
+																		echo do_shortcode( '[contact-form-7 id="26" title="Contact Main"]' );
+																	}?>
 																	<!-- <table style="color:white">
 																			<tr>
 																					<td>
@@ -184,7 +249,7 @@
 </footer>
 <div class="container">
 	<div class="registro">
-			<font color="#2F2523">Museo de Arte de Queretaro. ® 2014.</font>
+			<font color="#2F2523">Museo de Arte de Queretaro. ® 2015.</font>
 	</div>
 </div>
 <div class="scroll-top-wrapper ">
@@ -192,6 +257,7 @@
 			<i class="fa fa-3x fa fa-chevron-up"></i>
 	</span>
 </div>
+<?php  } ?>
 
 	<?php wp_footer(); ?>
 	</body>
