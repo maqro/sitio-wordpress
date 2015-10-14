@@ -16,10 +16,153 @@ if ( !$pagename && $id > 0 ) {
 	<footer>
 	        <div class="container">
 	            <div class="row" style="background-color:#9A9493;padding:70px;">
+								<div align="center">
+                                            <h2 id="contacto">Programa tu Visita Guiada</h2><br>
+                                        </div>
 	                <div class="col-md-2">
 	                </div>
-	                <div class="col-md-8">
+	                <div class="col-md-8" style="color: white;">
 	                    <?php echo do_shortcode( '[contact-form-7 id="45" title="Contact Educacion"]' ); ?>
+	                </div>
+	                <div class="col-md-2">
+	                </div>
+	            </div>
+	            <div class="logoGob" align="center">
+	                <!-- <img src="media/logosGobierno2.png" /> -->
+	            </div>
+	        </div>
+	        <!-- Latest compiled and minified JavaScript -->
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	        <script src="http://www.jscache.com/wejs?wtype=socialButtonRate&amp;uniq=998&amp;locationId=2315125&amp;color=white&amp;reviewCountRequested=true&amp;lang=es&amp;display_version=2"></script>
+	        <script>
+	            $(function(){
+
+	                $(document).on( 'scroll', function(){
+
+	                    if ($(window).scrollTop() > 1500) {
+	                        $('.scroll-top-wrapper').addClass('show');
+	                    } else {
+	                        $('.scroll-top-wrapper').removeClass('show');
+	                    }
+	                });
+
+	                $('.scroll-top-wrapper').on('click', scrollToTop);
+	            });
+
+	            function scrollToTop() {
+	                verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+	                element = $('body');
+	                offset = element.offset();
+	                offsetTop = offset.top;
+	                $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+	            }
+	        </script>
+	    </footer>
+	    <div class="container">
+	        <div class="registro">
+	            <font color="#2F2523">Museo de Arte de Queretaro. ® 2015.</font>
+	        </div>
+	    </div>
+	    <div class="scroll-top-wrapper ">
+	        <span class="scroll-top-inner">
+	            <i class="fa fa-3x fa fa-chevron-up"></i>
+	        </span>
+	    </div>
+<?php }else if($pagename == "voluntariado") { ?>
+	<footer>
+        <div class="container">
+            <div class="row" style="background-color:#9A9493;padding:70px;">
+                <div class="col-md-4">
+                    <div id="TA_certificateOfExcellence966" class="TA_certificateOfExcellence" align="center">
+                        <ul id="wBDcQZ1zCcZ" class="TA_links b3usllerZh3">
+                            <li id="g2yjFnGboJK" class="FeUO3q">
+                                <a target="_blank" href="http://www.tripadvisor.com.mx/"><img src="http://www.tripadvisor.com.mx/img/cdsi/img2/awards/CoE2014_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script src="http://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=966&amp;locationId=2315125&amp;lang=es_MX&amp;year=2014&amp;display_version=2"></script>
+
+<!--
+                    <div id="plugins-sociales">
+                        <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuseodeartedequeretaro&amp;width&amp;height=300&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:400px;" allowTransparency="true"></iframe>
+                    </div>
+-->
+                </div>
+                <div class="col-md-8">
+                    <div class="row" style="padding-bottom:5em;">
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-8">
+                            <div>
+																<div class="form-group">
+																		<div align="center">
+																				<h2 id="contacto">Contacto</h2>
+																		</div>
+																		<?php echo do_shortcode( '[contact-form-7 id="47" title="Contact Voluntariado"]' ); ?>
+																</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="logoGob" align="center">
+                    <!-- <img src="media/logosGobierno2.png" /> -->
+                </div>
+            </div>
+        </div>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="http://www.jscache.com/wejs?wtype=socialButtonRate&amp;uniq=998&amp;locationId=2315125&amp;color=white&amp;reviewCountRequested=true&amp;lang=es&amp;display_version=2"></script>
+        <script>
+            $(function(){
+
+                $(document).on( 'scroll', function(){
+
+                    if ($(window).scrollTop() > 1500) {
+                        $('.scroll-top-wrapper').addClass('show');
+                    } else {
+                        $('.scroll-top-wrapper').removeClass('show');
+                    }
+                });
+
+                $('.scroll-top-wrapper').on('click', scrollToTop);
+            });
+
+            function scrollToTop() {
+                verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+                element = $('body');
+                offset = element.offset();
+                offsetTop = offset.top;
+                $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+            }
+        </script>
+    </footer>
+    <div class="container">
+        <div class="registro">
+            <font color="#2F2523">Museo de Arte de Queretaro. ® 2015.</font>
+        </div>
+    </div>
+    <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+            <i class="fa fa-3x fa fa-chevron-up"></i>
+        </span>
+    </div>
+
+<?php }else if($pagename == "amigos") { ?>
+	<footer>
+	        <div class="container">
+	            <div class="row" style="background-color:#9A9493;padding:70px;">
+								<div align="center">
+																					<h2 id="contacto">Formulario</h2><br>
+																			</div>
+	                <div class="col-md-2">
+	                </div>
+	                <div class="col-md-8" style="color: white;">
+	                    <?php echo do_shortcode( '[contact-form-7 id="46" title="Contact Amigos"]' ); ?>
 	                </div>
 	                <div class="col-md-2">
 	                </div>
@@ -99,11 +242,7 @@ if ( !$pagename && $id > 0 ) {
 											<div>
 															<div class="form-group row">
 																	<h2 id="contacto">Contacto</h2>
-																	<?php if ($pagename == "educacion") {
-																		echo do_shortcode( '[contact-form-7 id="45" title="Contact Educacion"]' );
-																	} else {
-																		echo do_shortcode( '[contact-form-7 id="26" title="Contact Main"]' );
-																	}?>
+																	<?php echo do_shortcode( '[contact-form-7 id="26" title="Contact Main"]' ); ?>
 																	<!-- <table style="color:white">
 																			<tr>
 																					<td>
