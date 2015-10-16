@@ -17,13 +17,13 @@ body {
   width: 100%;
   background-color: #66241F; }
 
-.logoGob img {
-  width: 33%;
-  float: left;
-  display: inline-block;
-  max-height: 100px;
-  height: auto;
-  background-color: white; }
+.logoGob {
+  text-align: center; }
+  .logoGob img {
+    width: 70%;
+    display: inline-block;
+    height: auto;
+    background-color: white; }
 
 .registro {
   background-color: white;

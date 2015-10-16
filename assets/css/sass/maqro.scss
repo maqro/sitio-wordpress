@@ -21,13 +21,14 @@ $main-color: #B71965;
    background-color: #66241F;
  }
 
- .logoGob img {
-   width: 33%;
-   float: left;
-   display: inline-block;
-   max-height: 100px;
-   height: auto;
-   background-color: white;
+ .logoGob {
+   text-align: center;
+   img {
+     width: 70%;
+     display: inline-block;
+     height: auto;
+     background-color: white;
+   }
  }
 
  .registro {
