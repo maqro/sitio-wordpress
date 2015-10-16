@@ -28,6 +28,7 @@ if ( !$pagename && $id > 0 ) {
 	                </div>
 	            </div>
 	            <div class="logoGob" align="center">
+									<?php include("logos.php"); ?>
 	                <!-- <img src="media/logosGobierno2.png" /> -->
 	            </div>
 	        </div>
@@ -109,6 +110,7 @@ if ( !$pagename && $id > 0 ) {
 
                 </div>
                 <div class="logoGob" align="center">
+										<?php include("logos.php"); ?>
                     <!-- <img src="media/logosGobierno2.png" /> -->
                 </div>
             </div>
@@ -168,6 +170,7 @@ if ( !$pagename && $id > 0 ) {
 	                </div>
 	            </div>
 	            <div class="logoGob" align="center">
+									<?php include("logos.php"); ?>
 	                <!-- <img src="media/logosGobierno2.png" /> -->
 	            </div>
 	        </div>
@@ -355,6 +358,7 @@ if ( !$pagename && $id > 0 ) {
 
 					</div>
 					<div class="logoGob" align="center">
+							<?php include("logos.php"); ?>
 							<!-- <img src="media/logosGobierno2.png" /> -->
 					</div>
 			</div>

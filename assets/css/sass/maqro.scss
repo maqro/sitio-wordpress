@@ -22,10 +22,12 @@ $main-color: #B71965;
  }
 
  .logoGob img {
-   width: 90%;
+   width: 33%;
+   float: left;
+   display: inline-block;
+   max-height: 100px;
    height: auto;
    background-color: white;
-   position: bottom;
  }
 
  .registro {
