@@ -1,10 +1,10 @@
 <h1 class="text-center">
     <a href="#carousel-temporales" role="button" data-slide="prev">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/red-left2.png"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/white-left.png"></img>
     </a>
     Exposiciones Temporales
     <a  href="#carousel-temporales" role="button" data-slide="next">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/red-right2.png"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/white-right.png"></img>
     </a>
 </h1>
 <div id="carousel-temporales" class="carousel slide" data-ride="carousel">

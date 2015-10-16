@@ -114,7 +114,7 @@ get_header(); ?>
                         <h1>Colecciones Permanentes</h1>
                         <div style="text-align:center;">
                             <a href="#carousel-permanentes" role="button" data-slide="next">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/top2.png"></img>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/top.png"></img>
                             </a>
                             <br/>
                             <br/>
@@ -125,7 +125,7 @@ get_header(); ?>
                             </div>
                             <br/>
                             <a href="#carousel-permanentes" role="button" data-slide="prev">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/bottom2.png"></img>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/src/media/bottom.png"></img>
                             </a>
                         </div>
                     </div>

@@ -10,7 +10,7 @@ $main-color: #B71965;
 
  body {
    background: #fff;
-   color: #66241F;
+   color: darken($main-color, 20%);
    font-family: 'Open Sans Condensed', sans-serif;
    font-weight: 700;
    font-size: 16px;
