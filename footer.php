@@ -320,7 +320,7 @@ if ( !$pagename && $id > 0 ) {
 															<table style="color:white;font-size:15px">
 																	<tr>
 																			<td>
-																			• Lic. Marcela Herbert Pesquera
+																			• Lic. Roberto González García
 																			</td>
 																			<td>
 																			Dirección
@@ -347,7 +347,7 @@ if ( !$pagename && $id > 0 ) {
 																			• Mtra. Adela González Cruz Manjarrez
 																			</td>
 																			<td>
-																			Servicios Educativos y Difusión
+																			Servicios Educativos
 																			</td>
 																	</tr>
 															</table>
